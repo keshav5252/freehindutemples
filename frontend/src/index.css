@@ -54,6 +54,17 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
+nav ul li:last-child a{
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #6f42c1;
+    color: whitesmoke;
+  }
+}
+
 nav ul li a:hover {
   color: #007bff;
 }
@@ -64,7 +75,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   nav ul {
       display: none; 
       flex-direction: column;
@@ -77,6 +88,11 @@ nav ul li a:hover {
       border-radius: 4px;
   }
 
+  nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+
   nav ul.active {
       display: flex; 
   }
@@ -84,4 +100,18 @@ nav ul li a:hover {
   .material-symbols-outlined {
       display: block; 
   }
+}
+
+/* ----------------------- About us page ---------------------------- */
+
+.addresslister {
+  padding: 40px;
+  background-image: url('/absdesign.jpg');
+  background-size: cover;
+  background-color: #71717178;
+  background-blend-mode: color;
+}
+
+.content p {
+  padding: 10px 40px;
 }

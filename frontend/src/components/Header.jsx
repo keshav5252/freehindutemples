@@ -31,6 +31,9 @@ const Header = () => {
                     <li>
                         <Link to='/'>Contact us</Link>
                     </li>
+                    <li>
+                        <Link to='/signup'>Sign up</Link>
+                    </li>
                 </ul>
                 <span className="material-symbols-outlined" onClick={toggleMenu}>
                     menu
