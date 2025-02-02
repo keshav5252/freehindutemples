@@ -14,25 +14,25 @@ const Header = () => {
                 <img src="/logo.png" alt="logo" width={70} height='auto' />
                 <ul className={isMenuOpen ? 'active' : ''}>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <Link to='/' onClick={toggleMenu}>Home</Link>
                     </li>
                     <li>
-                        <Link to='/about'>About us</Link>
+                        <Link to='/about' onClick={toggleMenu}>About us</Link>
                     </li>
                     <li>
-                        <Link to='/templesDirectory'>Temples Directory</Link>
+                        <Link to='/templesDirectory' onClick={toggleMenu}>Temples Directory</Link>
                     </li>
                     <li>
-                        <Link to='/events'>Events</Link>
+                        <Link to='/events' onClick={toggleMenu}>Events</Link>
                     </li>
                     <li>
-                        <Link to='/blogs'>Blogs</Link>
+                        <Link to='/blogs' onClick={toggleMenu}>Blogs</Link>
                     </li>
                     <li>
-                        <Link to='/'>Contact us</Link>
+                        <Link to='/' onClick={toggleMenu}>Contact us</Link>
                     </li>
                     <li>
-                        <Link to='/signup'>Sign up</Link>
+                        <Link to='/signup' onClick={toggleMenu}>Sign up</Link>
                     </li>
                 </ul>
                 <span className="material-symbols-outlined" onClick={toggleMenu}>

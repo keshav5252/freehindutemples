@@ -5,10 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
 }
 
 body {
   font-family:'Poppins', "Roboto", 'Rubik' sans-serif;
+  scrollbar-width: thin;
 }
 
 /* ----------------------- Header ---------------------------- */
@@ -18,6 +20,9 @@ header {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 nav {
@@ -114,4 +119,138 @@ nav ul li a:hover {
 
 .content p {
   padding: 10px 40px;
+}
+
+/* ----------------------- Signup page ---------------------------- */
+
+/* Base styles */
+.form-container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 85.64px);
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label , .form p{
+  display: block;
+  margin-bottom: 8px;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .form {
+      padding: 20px;
+  }
+
+  .form h1 {
+      font-size: 20px;
+  }
+
+  .form-group input {
+      padding: 8px;
+      font-size: 13px;
+  }
+
+  .btn {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
+
+/* ----------------------- temple Directory ---------------------------- */
+
+.td-container {
+  max-width: 1500px;
+  min-height: calc(100vh - 85.64px);
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.td input {
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+
+  &:focus {
+    outline: 1px solid #4015ff;
+  }
+}
+
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.slider-info {
+  transform: translate(-50%, -50%);
 }

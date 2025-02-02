@@ -1,6 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
-import Aboutus from './components/Aboutus';
+import Header from './Sections/Header';
+import Aboutus from './Sections/Aboutus';
+import Signup from './Sections/Signup';
+import TemplesDirectory from './Sections/TemplesDirectory';
+import Footer from './Sections/Footer';
+import Login from './Sections/Login';
+import Home from './Sections/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,11 +17,14 @@ function App() {
         <Header />
         
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<Aboutus />} />
-          {/* <Route path="/services" element={<h1>Services</h1>} />
-          <Route path="/contact" element={<h1>Contact</h1>} /> */}
+          <Route path="/templesDirectory" element={<TemplesDirectory />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
+
+        {/* <Footer /> */}
 
       </main>
     </Router>
