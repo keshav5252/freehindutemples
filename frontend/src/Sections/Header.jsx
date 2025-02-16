@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
         <header>
             <nav className='flex justify-between items-center px-5'>
                 <img src="/logo.png" alt="logo" width={70} height='auto' />
-                <ul className={isMenuOpen ? 'active' : ''}>
+                <ul className={isMenuOpen ? 'active' : ''} >
                     <li>
                         <Link to='/' onClick={toggleMenu}>Home</Link>
                     </li>

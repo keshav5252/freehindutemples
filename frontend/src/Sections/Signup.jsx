@@ -1,9 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+
+    }
     return (
-        <form className='form-container'>
+        <form onSubmit={handleOnSubmit} className='form-container'>
             <div className="form">
                 <h1 className='font-bold'>Sign Up</h1>
                 <div className="form-group">

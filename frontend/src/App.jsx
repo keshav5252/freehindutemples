@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './Sections/Header';
 import Aboutus from './Sections/Aboutus';
 import Signup from './Sections/Signup';
@@ -24,7 +23,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
 
-        {/* <Footer /> */}
+         <Footer />
 
       </main>
     </Router>
